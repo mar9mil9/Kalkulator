@@ -4,10 +4,10 @@
 
 import logging
 logging.basicConfig(level=logging.INFO)
-czy_kontynuowac = ""
+czy_kontynuowac = "t"
 wynik = 0
 
-while czy_kontynuowac != "n":
+while czy_kontynuowac == "t":
 
     dzialanie = input("Podaj działanie, posługując się odpowiednią liczbą: 1 Dodawanie, 2 Odejmowanie, 3 Mnożenie, 4 Dzielenie :")
     składnik_pierwszy = int(input("Podaj składnik 1:"))
@@ -33,4 +33,4 @@ while czy_kontynuowac != "n":
         print("Wybierz jedno z czterech działań")
         logging.info(f"podałeś : {dzialanie}")
 
-    czy_kontynuowac = input("Czy chcesz kontynuować liczenie (t/n):")
+    czy_kontynuowac = input("Jeśli chcesz kontynuować wpisz (t):")
